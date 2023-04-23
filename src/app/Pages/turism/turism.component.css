@@ -1,0 +1,23 @@
+.buttons-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.atractii-container {
+  position: relative;
+}
+
+.atractii-container .close-btn {
+  position: absolute;
+  width: 3rem;
+  height: 2.6rem;
+  top: -1rem;
+  right: 0;
+}
+/*# sourceMappingURL=turism.component.css.map */

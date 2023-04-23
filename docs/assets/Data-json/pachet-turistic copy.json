@@ -1,0 +1,18 @@
+[
+  {
+    "id": 0,
+    "ziua": 1,
+    "title": "Turism Cultural",
+    "imageURL": "assets/images/Turism/Atractii/Casa-Memoriala-Brancusi.jpg",
+    "thumbURL": "assets/images/Turism/Atractii/Thumb/Casa-Memoriala-Brancusi.jpg",
+    "text": "Vizitarea casei memoriale Constantin Brâncuși de la Hobița și a Muzeului Satului din Gureni."
+  },
+  {
+    "id": 1,
+    "ziua": 2,
+    "title": "Turism Religios",
+    "imageURL": "assets/images/Turism/Atractii/Mănăstirea-Tismana.jpg",
+    "thumbURL": "assets/images/Turism/Atractii/Thumb/Mănăstirea-Tismana.jpg",
+    "text": "Vizitarea Mănăstirii Tismana și a Schitului de la Cioclovina de Jos de lângă Tismana; vizitarea bisericilor de lemn de la Gureni, Hobița, Frâncești și Peștișani."
+  }
+]

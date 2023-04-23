@@ -1,0 +1,39 @@
+<section>
+
+
+    <div class="atractii-gallery">
+      <div class="atractii-item text-center" *ngFor="let atractie of Atractii"  appModalClick    (click)="showModal($event)"   id={{atractie.id}}>
+        <img src={{atractie.thumbURL}} alt=""  id={{atractie.id}}>
+        <h5   id={{atractie.id}}>{{atractie.title}}</h5>
+      </div>
+    </div>
+
+<!-- Modal -->
+    <div class="modal-container">
+      <div class="modal"   *ngFor="let atractie of Atractii"  id={{atractie.id}}>
+        <div class="modal-content">
+          <div class="description">
+            <h4>{{atractie.title}}</h4>
+            <p>{{atractie.text}}</p>
+          </div>
+          <img src={{atractie.imageURL}} alt="">
+        </div>
+        <button id={{atractie.id}} class="close-modal" (click)="closeModal($event)">
+          <span id={{atractie.id}} class="material-icons" >close</span>
+        </button>
+      </div>
+
+
+    </div>
+
+</section>
+
+<!-- Modal -->
+<!-- <section>
+    <div class="modal-container"></div>
+    <div class="modal">
+      <img src="assets/images/Turism/Atractii/Casa-Memoriala-Brancusi.jpg" alt="">
+      <h4>Casa memorială „Brâncuși”</h4>
+      <p>Casa memorială „Constantin Brâncuși” este situată în satul Hobița din comuna Peștișani, la aproximativ 11 km de zona de camping și de cea destinată cultivării fructelor, și reprezintă locul natal al sculptorului Constantin Brâncuși. Arhitectura populară a acesteia este specifică sfârșitului secolului XIX și se poate observa pe ușa cămării, stâlpilor prispei și nu numai.  În fiecare încăpere se găsesc diferite obiecte ce amintesc de viața de zi cu zi a sculptorului, dar și de cariera lui. Cu siguranță un obiectiv pe care trebuie să-l bifați pe lista cu lucruri de văzut!</p>
+    </div>
+</section> -->

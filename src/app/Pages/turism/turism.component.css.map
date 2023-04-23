@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,kBAAkB,CAAC;EACjB,OAAO,EAAE,IAAI;EACb,WAAW,EAAE,MAAM;EACnB,eAAe,EAAE,YAAY;CAC9B;;AAGD,AAAA,mBAAmB,CAAC;EAClB,QAAQ,EAAE,QAAQ;CAQnB;;AATD,AAEE,mBAFiB,CAEjB,UAAU,CAAC;EACT,QAAQ,EAAE,QAAQ;EAClB,KAAK,EAAE,IAAI;EACX,MAAM,EAAE,MAAM;EACd,GAAG,EAAE,KAAK;EACV,KAAK,EAAE,CAAC;CACT",
+    "sources": [
+        "turism.component.scss"
+    ],
+    "names": [],
+    "file": "turism.component.css"
+}

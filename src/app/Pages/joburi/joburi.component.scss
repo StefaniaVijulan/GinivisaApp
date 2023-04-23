@@ -1,0 +1,26 @@
+.job-link {
+  cursor: pointer;
+  &:hover {
+    color: rgb(27, 81, 161);
+    text-decoration: underline;
+  }
+}
+.description-container {
+  position: relative;
+  .close-btn {
+    position: absolute;
+    width: 3rem;
+    height: 2.6rem;
+    top: -1rem;
+    right: 0;
+  }
+}
+
+
+
+// Job title evade close & facebook buttons
+@media only screen and (max-width: 430px) {
+  .description-container {
+    padding-top: 2rem;
+  }
+}

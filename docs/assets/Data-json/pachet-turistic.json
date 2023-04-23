@@ -1,0 +1,145 @@
+[
+  {
+    "id": 0,
+    "ziua": 1,
+    "price": 50,
+    "activity": [
+      {
+        "title": "TURISM CULTURAL",
+        "list": [
+          "Vizitarea casei memoriale Constantin Brâncuși de la Hobița și a Muzeului Satului din Gureni."
+        ]
+      },
+      {
+        "title": "TURISM RELIGIOS",
+        "list": [
+          "Vizitarea Mănăstirii Tismana și a Schitului de la Cioclovina de Jos de lângă Tismana; vizitarea bisericilor de lemn de la Gureni, Hobița, Frâncești și Peștișani."
+        ]
+      }
+    ],
+    "imgThumb": "assets/images/Turism/Atractii/Casa-Memoriala-Brancusi.jpg",
+    "imgUrl": [
+      "assets/images/Turism/Atractii/Casa-Memoriala-Brancusi.jpg", "assets/images/Turism/Atractii/Casa-Memoriala-Brancusi2.jpg", "assets/images/Turism/Atractii/Manastirea-Tismana.jpg", "assets/images/Turism/Atractii/Tismana1.jpg", "assets/images/Turism/Atractii/Tismana2.jpg"
+    ]
+  },
+  {
+    "id": 1,
+    "ziua": 2,
+    "price": 50,
+    "activity": [
+      {
+        "title": "TURISM DE AGREMENT",
+        "list": [
+          "Drumeție în Valea Nucu și în Poiana Mărului."
+        ]
+      }
+    ],
+    "imgThumb": "assets/images/Turism/Atractii/Valea-Nucu.jpg",
+    "imgUrl": [
+      "assets/images/Turism/Atractii/Valea-Nucu.jpg", "assets/images/Turism/Atractii/Valea-Nucu1.jpg"
+    ]
+  },
+  {
+    "id": 2,
+    "ziua": 3,
+    "price": 50,
+    "activity": [
+      {
+        "title": "TURISM DE AGREMENT",
+        "list": [
+          "Vizitarea barajelor Vâja și Clocotiș, dar și vizitarea Golului Alpin cu vârful Oslea  (1946 m) și vârful Arcanu (1760 m)."
+        ]
+      }
+    ],
+    "imgThumb": "assets/images/Turism/Atractii/Barajul Clocotis.jpg",
+    "imgUrl": [
+      "assets/images/Turism/Atractii/Barajul Clocotis.jpg", "assets/images/Turism/Atractii/Lacul Vaja1.jpg", "assets/images/Turism/Atractii/Lacul Vaja2.jpg"
+    ]
+  },
+  {
+    "id": 3,
+    "ziua": 4,
+    "price": 50,
+    "activity": [
+      {
+        "title": "TURISM DE AGREMENT",
+        "list": [
+          "Excursie la Cheile Sohodolului unde sunt amenajate si omologate trasee de alpinism; escaladă care să corespundă cerințelor turiștilor, precum și ateliere de rapel și tiroliană."
+        ]
+      }
+    ],
+    "imgThumb": "assets/images/Turism/Atractii/Cheile-Sohodorului.jpg",
+    "imgUrl": [
+      "assets/images/Turism/Atractii/Cheile-Sohodorului.jpg", "assets/images/Turism/Atractii/Cheile-Sohodorului1.jpg", "assets/images/Turism/Atractii/Cheile-Sohodorului2.jpg", "assets/images/Turism/Atractii/Cheile-Sohodorului3.jpg"
+    ]
+  },
+  {
+    "id": 4,
+    "ziua": 5,
+    "price": 50,
+    "activity": [
+      {
+        "title": "NATURA ȘI OBIECTIVELE TURISTICE DIN PEȘTIȘANI",
+        "list": [
+          "Valea Bistriței - reprezintă pentru turiștii iubitori de natură un punct de atracție, fiind o zonă sălbatică.  Bistrița gorjeană este un afluent al râului Tismana și se formează la confluența a două brațe: Negoiu și Groapele.", "Stejarul secular din Brădiceni - a fost plantat în anul 1864 în memoria eroilor care s-au jertfit pentru eliberarea Olteniei de sub ocupație austriacă.", "Piatra Boroștenilor - este o rezervație naturală cu o suprafață 28 ha și reprezintă o zonă montană de interes geologic, floristic și imagistic; aici există o specie rară de plantă de stâncă denumită popular „Crucea Voinicului” (Hepatica Transsilvanica)." , "Peștera Cioarei - este una dintre cele mai vechi din istoria omenirii. În această zonă, s-au găsit urme ale existenței umane mai vechi de 50 000 de ani." , "Lacurile din Peștișani - situate în spatele Primăriei reprezintă o oază de liniște de o frumusețe rar intâlnită."
+        ]
+      }
+    ],
+    "imgThumb": "assets/images/Turism/Atractii/Stejarul secular din Bradiceni.jpg",
+    "imgUrl": [
+      "assets/images/Turism/Atractii/Stejarul secular din Bradiceni.jpg", "assets/images/Turism/Atractii/Valea Bistritei1.jpg", "assets/images/Turism/Atractii/Piatra Borostenilor.jpg", "assets/images/Turism/Atractii/Pestera Cioarei.jpg", "assets/images/Turism/Atractii/Lacurile din Pestisani.jpg"
+    ]
+  },
+  {
+    "id": 5,
+    "ziua": 6,
+    "price": 50,
+    "activity": [
+      {
+        "title": "ACTIVITĂȚI SPORTIVE",
+        "list": [
+          "Tenis de masă, tenis de câmp, fotbal-tenis, biliard."
+        ]
+      },
+      {
+        "title": "ACTIVITĂȚI RECREATIVE",
+        "list": [
+          "Ciubar cu jacuzzi, darts, rumy, table ,sah, carti, etc."
+        ]
+      },
+      {
+        "title": "ACTIVITĂȚI GASTRONOMICE",
+        "list": [
+          "Grătar, ceaun."
+        ]
+      },
+      {
+        "title": "KIT DE SUPRAVIEȚUIRE ÎN NATURĂ ",
+        "list": [
+          "Alimentație, orientare, îmbrăcăminte."
+        ]
+      }
+    ],
+    "imgThumb": "assets/images/Turism/Atractii/Ciubar.jpg",
+    "imgUrl": [
+      "assets/images/Turism/Atractii/Ciubar.jpg", "assets/images/Turism/Atractii/Biliard.jpg", "assets/images/Turism/Atractii/Ping-pong.jpg", "assets/images/Turism/Atractii/Ceaun.jpg"
+    ]
+  },
+  {
+    "id": 6,
+    "ziua": 7,
+    "price": 50,
+    "activity": [
+      {
+        "title": "CULESUL FRUCTELOR DE LA FERMA GINIVIȘA ",
+        "list": [
+          "Se va face o activitate organizată, în cadrul căreia se vor culege fructe (căpșuni, zmeură, mere etc)."
+        ]
+      }
+    ],
+    "imgThumb": "assets/images/Turism/Atractii/Capsuni.jpg",
+    "imgUrl": [
+      "assets/images/Turism/Atractii/Capsuni.jpg", "assets/images/Turism/Atractii/Capsuni2.jpg", "assets/images/Turism/Atractii/Zmeura1.jpg"
+    ]
+  }
+]

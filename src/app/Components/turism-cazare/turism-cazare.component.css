@@ -1,0 +1,141 @@
+.turism-thumb {
+  position: relative;
+  max-width: 420px;
+}
+
+.turism-thumb h4 {
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  text-shadow: 1px 1px 3px black;
+}
+
+.turism-thumb:hover h4 {
+  background-color: rgba(0, 59, 28, 0.363);
+  border: 2px solid white;
+  -webkit-box-shadow: 1px 1px 3px black;
+          box-shadow: 1px 1px 3px black;
+}
+
+.turism-thumb .image-container {
+  background-color: black;
+}
+
+.turism-thumb .image-container img {
+  max-height: 240px;
+  opacity: 0.8;
+}
+
+.turism-thumb .turism-thumb-row {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.buttons {
+  position: relative;
+  height: 1rem;
+}
+
+.buttons .close-btn {
+  position: absolute;
+  width: 3rem;
+  height: 2.6rem;
+  top: -1rem;
+  right: 0;
+}
+
+.buttons .facebook-btn {
+  position: absolute;
+  width: 3rem;
+  height: 2.6rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  top: -1rem;
+  left: 0;
+  background-color: #3B5998;
+}
+
+.buttons .booking-btn {
+  position: absolute;
+  width: 3rem;
+  height: 2.6rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  top: -1rem;
+  left: 3.2rem;
+  background-color: #003680;
+}
+
+.description-container {
+  position: relative;
+}
+
+.description-container .close-btn {
+  position: absolute;
+  width: 3rem;
+  height: 2.6rem;
+  top: -1rem;
+  right: 0;
+}
+
+.description-container .facebook-btn {
+  position: absolute;
+  width: 3rem;
+  height: 2.6rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  top: -1rem;
+  left: 0;
+  background-color: #3B5998;
+}
+
+.description-container .booking-btn {
+  position: absolute;
+  width: 3rem;
+  height: 2.6rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  top: -1rem;
+  left: 3.2rem;
+  background-color: #003680;
+}
+
+@media only screen and (max-width: 767px) {
+  .thumb-container .turism-thumb-row button {
+    padding: 10px 20px;
+  }
+}
+
+@media only screen and (max-width: 510px) {
+  .thumb-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .thumb-container .image-container img {
+    -o-object-fit: cover;
+       object-fit: cover;
+    height: 150px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .description-container {
+    padding-top: 2rem;
+  }
+}
+/*# sourceMappingURL=turism-cazare.component.css.map */

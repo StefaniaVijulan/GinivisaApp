@@ -1,0 +1,27 @@
+.job-link {
+  cursor: pointer;
+}
+
+.job-link:hover {
+  color: #1b51a1;
+  text-decoration: underline;
+}
+
+.description-container {
+  position: relative;
+}
+
+.description-container .close-btn {
+  position: absolute;
+  width: 3rem;
+  height: 2.6rem;
+  top: -1rem;
+  right: 0;
+}
+
+@media only screen and (max-width: 430px) {
+  .description-container {
+    padding-top: 2rem;
+  }
+}
+/*# sourceMappingURL=joburi.component.css.map */

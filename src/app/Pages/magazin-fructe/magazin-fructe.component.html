@@ -1,0 +1,63 @@
+<!-- Header -->
+<section class="header-container">
+  <!-- Background image -->
+  <img class="header-image-background" src="assets/images/Header-Fructe.jpg" alt="">
+  <div class="gradient"></div>
+
+  <!-- Header content -->
+  <div class="container header-content">
+    <div class="header-logo">
+      <img src="assets/images/Logo Ginivisa.png" alt="">
+    </div>
+    <!-- Header Title -->
+    <div class="header-title">
+      <h2 class="green">Fructele tale au gustul Gorjului</h2>
+    </div>
+  </div>
+</section>
+
+<!-- Page Content -->
+<div class="container">
+  <!-- Magazin Fructe -->
+  <section>
+    <h3 class="green">Fructele de la Ferma Gorjului, izvorul tău de sănătate!</h3>
+    <p>
+      Ne dorim să oferim cumpărătorilor o gamă largă de unde își pot alege produsele dorite, astfel am pregătit pentru voi o suprafață de 5000 de mp de solarii cu fructe.
+    </p>
+    <h4 class="green">Ce avantaje aveți cumpărând de la noi?</h4>
+    <ul>
+      <li>Un avantaj foarte important la Ginivișa, pe care nu-l dețin toate fermele din această industrie, este acela că aici <strong>puteți culege fructele direct din solarii</strong>, având ocazia în acest mod să vedeți condițiile și ambientul în care au fost crescute. Adresa plantației noastre este comuna Peștișani, sat Gureni, Nr. 84.</li>
+      <li><strong>Livrarea la domiciliu</strong> se face prompt și la timp, în localitate. Suntem punctuali și în livrările către orașul Târgu Jiu. Aici, însă, cantitatea livrată trebuie să fie de <strong>minimum 5 kg</strong>.</li>
+      <li>Cumpărarea directă de la standurile  din <strong>Piața Centrală</strong> și <strong>Piața 9 Mai</strong> din Tg-Jiu, unde puteți degusta și cere mai multe detalii despre fructele noastre.</li>
+      <li>Oferim și posibilitatea <strong>contractelor de colaborare</strong> cu firme sau persoane care cumpără produsele noastre în cantități mai mari, cu o anumită frecvență. În aceste cazuri, punem accentul pe ideea de fidelizare a clienților, iar avantajul comercial va fi evident.</li>
+    </ul>
+    <p>Pentru comenzi sau relații ne puteți contacta la tel:
+      <strong>
+      <!-- Show/Hide active Call -->
+      <span *ngIf="!displayTEL">+40 784 503 599</span>
+      <span class=" blue-link"  *ngIf="displayTEL"><a  href="tel:+40 784 503 599">+40 784 503 599</a></span>
+      </strong>
+
+      sau email: <strong>contact@ginivisa.com </strong></p>
+  </section>
+
+  <hr>
+
+  <app-swiper-gallery-fructe></app-swiper-gallery-fructe>
+
+<!-- Show "Despre Fructe" / "Gallery" -->
+
+  <section class="despre-fructe">
+    <button  *ngIf="!displayFructe"  (click)="showDespreFructe()">Despre Fructe  <span class="material-icons">expand_more</span></button>
+    <button  *ngIf="displayFructe"  (click)="hideDespreFructe()">Despre Fructe  <span class="material-icons">close</span></button>
+    <!-- <button  *ngIf="!displayGallery"  (click)="showGalleryFructe()">Galerie Fructe  <span class="material-icons">expand_more</span></button> -->
+    <!-- <button  *ngIf="displayGallery"  (click)="hideGalleryFructe()">Galerie Fructe  <span class="material-icons">close</span></button> -->
+    <!-- <button  *ngIf="displayFructe"  (click)="hideDespreFructe()">Despre Fructe  <span class="material-icons">close</span></button> -->
+  </section>
+
+  <section>
+    <app-fructe *ngIf="displayFructe"></app-fructe>
+
+  </section>
+
+</div>

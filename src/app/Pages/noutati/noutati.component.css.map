@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,eAAe,CAAC;EACd,OAAO,EAAE,IAAI;EACb,MAAM,EAAE,SAAS;EACjB,aAAa,EAAE,IAAI;EACnB,UAAU,EAAE,CAAC,CAAC,CAAC,CAAC,IAAI,CAAC,kBAAkB;CAIxC;;AARD,AAKE,eALa,CAKb,MAAM,CAAC;EACL,MAAM,EAAE,IAAI;CACb",
+    "sources": [
+        "noutati.component.scss"
+    ],
+    "names": [],
+    "file": "noutati.component.css"
+}

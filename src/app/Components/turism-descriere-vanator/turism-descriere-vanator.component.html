@@ -1,0 +1,121 @@
+<section>
+  <div class="buttons-container">
+    <button routerLink="/turism" class="btn-galerie" > <span class="material-icons">arrow_back</span></button>
+  </div>
+</section>
+
+<h4 class="text-center green">Hanul Vânătorului</h4>
+<div class="rating-stars text-center">
+  <img src="assets/images/3-Margarete.png" alt="">
+</div>
+<p>
+  <strong>Hanul Vânătorului</strong> este o pensiune construită în stilul conacelor boierești de odinioară. Este nouă și miroase a lemn proaspăt, ducându-i pe amatorii de istorie cu gândul la o anexă dintr-o « villa-rustica » din Antichitatea Imperiului Roman. Este spațioasă și cuprinde 5 camere de 2 persoane cu băi private, o cameră de o persoană cu baie privată, un apartament de 3 persoane cu baie proprie, un living, o sală de mese de 25 de persoane, o bucătărie, dar și un loc special amenajat pentru focuri de tabără. Și să nu uităm de <strong>restaurantul „Hanul Vânătorului”</strong> cu feluri de mâncare tradiționale și evenimente pe cinste!
+</p>
+<p>
+  Chiar alături de Hanul Vânătorului, regăsim <a routerLink="/turism-ana" routerLinkActive="active">Casa Ana</a>, o pensiune dotată cu tot confortul, dar mai intimă, oferind condiții optime pentru relaxare. Casa Ana poate găzdui grupuri de până la 10 vizitatori, invitați să se bucure de un ciubăr cu jacuzzi amplasat pe malul râului, de un loc de grătar numai bun pentru o șuetă cu prietenii sau cu familia, ori de o sală de jocuri cu masă de tenis, masă de billiard și dartboard.
+</p>
+<p>
+  Oferind peisaje de neuitat de la etaj și de la terase, Hanul Vânătorului este potrivit familiilor numeroase, dar și grupurilor mari de prieteni care vor să trăiască experiențe unice într-un loc feeric, departe de aglomerația și de poluarea urbană. Și ca să fie totul de-a dreptul perfect, de acum nu trebuie să-ți mai faci griji că nu vei avea destui bani cash la tine pentru cazare! 
+  <br>
+  Suntem dotați cu POS și acceptăm plata cu cardul! Chiar dacă ne aflăm într-o zonă rurală din munți, oaspeții noștri nu trebuie să se îngrijoreze pentru plata cazării în numerar. Casa Ana este dotată și cu un <i>POS</i>, iar plata cu cardul a devenit deja preferata turiștilor! Deasemenea se accepta si plata cu vouchere de vacanta <i>Sodexo</i>, <i>Edenred</i> si <i>Up Romania</i>!
+
+</p>
+
+<hr>
+<!-- Facebook & Booking -->
+<section class="rezerva">
+  <!-- <a [href]="linkFacebookHan" target="blank"><button mdbBtn color="fb" class="waves-light facebook-btn" mdbWavesEffect>Facebook</button></a> -->
+  <a href="/assets/Meniu Han.pdf" target="blank"><button mdbBtn color="fb" class="waves-light booking-btn" mdbWavesEffect>Meniu</button></a>
+  <!-- <a [href]="linkBookingHan" target="blank"><button mdbBtn color="fb" class="waves-light booking-btn" mdbWavesEffect>Booking</button></a> -->
+</section>
+
+<br>
+
+<!-- Lightbox -->
+<ng-image-slider [images]="GalerieHan" #nav></ng-image-slider>
+
+<br>
+
+<!-- Prices Table -->
+<table class="container text-center">
+  <tr class="green  text-center">
+    <th>Tip</th>
+    <th>Număr</th>
+    <th>Capacitate</th>
+    <th>Preț / Zi<span class="small"> (RON)</span></th>
+  </tr>
+  <!-- Cameră single -->
+  <tr>
+    <td class="font-weight-bold text-left">Cameră single</td>
+    <td class="font-weight-bold">1</td>
+    <td> <span class='material-icons'>person_outline</span> </td>
+    <td class="font-weight-bold text-center">150</td>
+  </tr>
+  <!-- Cameră dublă -->
+  <tr>
+    <td class="font-weight-bold text-left">Cameră dublă</td>
+    <td class="font-weight-bold">4</td>
+    <td> <span class='material-icons'>person_outline</span>  <span class='material-icons'>person_outline</span> </td>
+    <td class="font-weight-bold text-center">200</td>
+  </tr>
+  <!-- Cameră de familie -->
+  <tr>
+    <td class="font-weight-bold text-left">Cameră de familie</td>
+    <td class="font-weight-bold">1</td>
+    <td class="center-V">
+      <span class='material-icons'>person_outline</span>
+      <span class='material-icons'>person_outline</span>
+       
+    </td>
+    <td class="font-weight-bold text-center">300</td>
+  </tr>
+
+</table>
+
+<!-- Rezerva -->
+<section class="rezerva">
+  <button class="green" (click)="showRezerva()">Rezervă</button>
+</section>
+
+<!-- Rezerva Pop-up -->
+<section class="rezerva-window" *ngIf="displayRezerva">
+  <div class="rezerva-container container">
+    <button  class="close-modal" (click)="closeRezerva()">
+      <span  class="material-icons" >close</span>
+    </button>
+    <iframe src='https://www.5stardesk.ro/booking-engine/hanul-vanatorului' onload='javascript:(function(o){o.style.height=o.contentWindow.document.body.scrollHeight+"px";}(this));' style='height:100%;width:100%;border:none;overflow:hidden;'></iframe>
+<!-- 
+    <h4>Florin</h4>
+    <div class="rezerva-row">
+      <a *ngIf="displayTEL" href="tel:+40 784 503 599"><button><mat-icon>phone</mat-icon></button></a>
+      <h3 class="green">0784 503 599</h3>
+    </div>
+
+    <h4>Marian</h4>
+    <div class="rezerva-row">
+      <a *ngIf="displayTEL" href="tel:+40 723 279 823"><button><mat-icon>phone</mat-icon></button></a>
+      <h3 class="green">0723 279 823</h3>
+    </div>
+
+    <h4>Recepție</h4>
+    <div class="rezerva-row">
+      <a *ngIf="displayTEL" href="tel:+40 353 418 005"><button><mat-icon>phone</mat-icon></button></a>
+      <h3 class="green">0353 418 005</h3>
+    </div>
+
+    <h4>Email</h4>
+    <div class="rezerva-row">
+      <h3 class="green">contact@ginivisa.com</h3>
+    </div> -->
+
+  </div>
+</section>
+<br>
+<h5>
+ Unde ne găsești?
+</h5>
+<div class="contact-container">
+  <div class="contact-column">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2073.846102947541!2d23.03439566653891!3d45.13108262934862!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x474df9bebb7caa43%3A0x1da97f2c3006c80b!2zSGFudWwgVsOibsSDdG9ydWx1aQ!5e1!3m2!1sro!2sro!4v1677102852762!5m2!1sro!2sro"  width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+</div>

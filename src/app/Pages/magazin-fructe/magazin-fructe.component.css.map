@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAEE,cAFY,CAEZ,MAAM,CAAC;EACL,MAAM,EAAE,IAAI;CACb",
+    "sources": [
+        "magazin-fructe.component.scss"
+    ],
+    "names": [],
+    "file": "magazin-fructe.component.css"
+}

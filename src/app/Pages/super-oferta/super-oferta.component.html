@@ -1,0 +1,120 @@
+<!-- Header -->
+<section class="header-container">
+  <!-- Background image -->
+  <img class="header-image-background" src="assets/images/Header-Turism.jpg" alt="">
+  <div class="gradient"></div>
+
+  <!-- Header content -->
+  <div class="container header-content">
+    <div class="header-logo">
+      <img src="assets/images/Logo Ginivisa.png" alt="">
+    </div>
+    <!-- Header Title -->
+    <div class="header-title">
+      <h1 class="blue">Ginivișa Gorjului</h1>
+      <h2 class="green">Superofertă!!!</h2>
+    </div>
+  </div>
+</section>
+
+
+<!-- Page Content -->
+<div class="container">
+  <h2 class="green text-center">Superofertă!!!</h2>
+  <br>
+  <h4 class="text-center">20 Ianuarie - 10 Aprilie 2023</h4>
+  <br>
+  <p>Vino la Gureni, pe Valea Bistriței Gorjene, într-un loc minunat aflat la poalele munților, și încearcă <a href="/assets/Meniu Eveniment.pdf" target="blank">meniul nostru tradițional românesc</a>! Profită acum de o ofertă cum nu ai visat!</p>
+  <p><a routerLink="/turism-ana">Casa Ana</a> și <a routerLink="/turism-han">Hanul Vanatorului</a> îți oferă <strong>cazare, cina si mic dejun</strong> la prețul incredibil de <strong>150 lei/persoană</strong> în weekend și <strong>120 ron/persoană</strong> în timpul săptămânii. Capacitatea totală de cazare este de 25 persoane.</p>
+  <p>De ce suntem o variantă de nerefuzat? Poți beneficia, în limita disponibilității, contra cost, de un ciubăr cu hidromasaj de 8 persoane, aflat pe malul râului Bistrița, și de o sală de jocuri dotată cu darts, billiard, ping-pong.
+  </p>
+  <p>De asemenea, putem organiza evenimente festive cum ar fi <strong>Valentine's Day, Dragobete, 1 Martie, 8 Martie,</strong> dar și zile de naștere sau orice alt eveniment privat.</p>
+
+
+
+  <!-- Galerie -->
+  <section>
+    <h5 class="green text-center">Galerie</h5>
+    <swiper
+      [loop]="true"
+      [spaceBetween]="10"
+      [navigation]="true"
+      [thumbs]="{ swiper: thumbsSwiper }"
+      class="mySwiper2" >
+
+    <ng-template swiperSlide>
+        <img src="assets/images/Superoferta/Ciubar.jpg" />
+    </ng-template>
+    <ng-template swiperSlide>
+        <img src="assets/images/Superoferta/Biliard.jpg" />
+    </ng-template>
+    <ng-template swiperSlide>
+        <img src="assets/images/Superoferta/Ping-pong.jpg" />
+    </ng-template>
+    <ng-template swiperSlide>
+        <img src="assets/images/Superoferta/Han front.jpg" />
+    </ng-template>
+    <ng-template swiperSlide>
+        <img src="assets/images/Superoferta/Han yard.jpg" />
+    </ng-template>
+    <ng-template swiperSlide>
+        <img src="assets/images/Superoferta/Ceaun.jpg" />
+    </ng-template>
+    <ng-template swiperSlide>
+        <img src="assets/images/Superoferta/Aperitiv 01.jpg" />
+    </ng-template>
+    <ng-template swiperSlide>
+        <img src="assets/images/Superoferta/Aperitiv 02.jpg" />
+    </ng-template>
+    <ng-template swiperSlide>
+        <img src="assets/images/Superoferta/Desert.jpg" />
+    </ng-template>
+
+
+    </swiper>
+    <swiper
+      (swiper)="thumbsSwiper = $event"
+      [loop]="true"
+      [spaceBetween]="10"
+      [slidesPerView]="6"
+      [freeMode]="true"
+      [watchSlidesProgress]="true"
+      class="mySwiper" >
+
+      <ng-template swiperSlide>
+        <img src="assets/images/Superoferta/Ciubar.jpg" />
+    </ng-template>
+    <ng-template swiperSlide>
+        <img src="assets/images/Superoferta/Biliard.jpg" />
+    </ng-template>
+    <ng-template swiperSlide>
+        <img src="assets/images/Superoferta/Ping-pong.jpg" />
+    </ng-template>
+    <ng-template swiperSlide>
+        <img src="assets/images/Superoferta/Han front.jpg" />
+    </ng-template>
+    <ng-template swiperSlide>
+        <img src="assets/images/Superoferta/Han yard.jpg" />
+    </ng-template>
+    <ng-template swiperSlide>
+        <img src="assets/images/Superoferta/Ceaun.jpg" />
+    </ng-template>
+    <ng-template swiperSlide>
+        <img src="assets/images/Superoferta/Aperitiv 01.jpg" />
+    </ng-template>
+    <ng-template swiperSlide>
+        <img src="assets/images/Superoferta/Aperitiv 02.jpg" />
+    </ng-template>
+    <ng-template swiperSlide>
+        <img src="assets/images/Superoferta/Desert.jpg" />
+    </ng-template>
+
+
+
+
+
+    </swiper>
+  </section>
+</div>
+
+

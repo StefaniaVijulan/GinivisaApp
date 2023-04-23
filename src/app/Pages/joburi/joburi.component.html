@@ -1,0 +1,84 @@
+<!-- Header -->
+<section class="header-container">
+  <!-- Background image -->
+  <img class="header-image-background" src="assets/images/Header-Joburi.jpg" alt="">
+  <div class="gradient"></div>
+
+  <!-- Header content -->
+  <div class="container header-content">
+    <div class="header-logo">
+      <img src="assets/images/Logo Ginivisa.png" alt="">
+    </div>
+    <!-- Header Title -->
+    <div class="header-title">
+      <h1 class="green">Lucrează alături de noi!</h1>
+    </div>
+  </div>
+</section>
+
+<!-- Page Content -->
+<div class="container">
+
+  <section>
+    <h5 class="green"> Vino în echipa noastră</h5>
+    <P>
+      Îți dorești să faci parte dintr-o echipă unită, în care să poți avea și tu un cuvânt de spus? Atunci, te afli unde trebuie! Firma Ginivișa își mărește echipa și ar fi interesată să te cunoască!
+    </P>
+    <h5 class="green">Ce îți oferim?</h5>
+    <ul>
+      <li>Asigurare de sănătate;</li>
+      <li>Salariu motivant și bonusuri ocazionale;</li>
+      <li>Vechime în câmpul muncii;</li>
+      <li>Echipament de lucru și îmbrăcăminte de lucru asigurate;</li>
+      <li>Transport asigurat.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h5 class="green">Ce așteptări avem?</h5>
+    <p>
+      În funcție de jobul pentru care aplici, așteptările diferă. Totuși, avem un set de condiții general valabile. Ne referim la calități precum punctualitatea, buna comunicare, onestitatea, dorința de a învăța lucruri noi și adaptabilitatea la provocările care pot apărea pe parcurs, consecvența și intenția permanentă de perfecționare a muncii prestate.
+    </p>
+  </section>
+
+  <!-- <section>
+    <h5 class="green">Unde ne desfășurăm activitatea?</h5>
+    <p>Sediul nostru principal se află în <a href="https://en.wikipedia.org/wiki/Pe%C8%99ti%C8%99ani">Comuna Peștișani</a>, sat Gureni, județ Gorj, însă deținem un sediu și în București. În funcție de jobul pe care îl are angajatul, orele de muncă se pot desfășura și online. Astfel suntem deschisi la toate cele 3 posibilități: on-site, remote sau hibrid.</p>
+  </section> -->
+
+
+  
+  <section   #target>
+    <h5 class="green"> Pentru ce posturi poți aplica?</h5>
+    <ul>
+      <!-- <li><span  class="blue-link job-link"  (click)="showSMM(); scroll(target)">Bucătar</span></li> -->
+      <li><span  class="blue-link job-link"  (click)="showCOO(); scroll(target)">Opătar sau zilier</span></li>
+    </ul>
+  </section>
+
+  <section   #target>
+    <h5 class="green"> Pentru ce posturi ai fi putut aplica?</h5>
+    <ul>
+      <li><span  class="blue-link job-link"  (click)="showSMM(); scroll(target)">Bucătar</span></li>
+      <!-- <li><span  class="blue-link job-link"  (click)="showCOO(); scroll(target)">Opătar</span></li> -->
+    </ul>
+  </section>
+
+  <!-- <section   #target>
+    <h5 class="green"> Pentru ce posturi ai putea aplica?</h5>
+    <ul>
+      <li><span  class="blue-link job-link"  (click)="showContabil(); scroll(target)">Contabil</span></li>
+    </ul>
+  </section> -->
+
+  <hr>
+
+  <!-- Job Details -->
+  <section class="description-container">
+    <button class="close-btn" *ngIf="displayCOO || displaySMM || displayContabil" (click)="closeAll()"><span class="material-icons">close</span></button>
+    <app-job-smm  *ngIf="displaySMM"></app-job-smm>
+    <app-job-coo  *ngIf="displayCOO"></app-job-coo>
+    <app-job-contabil  *ngIf="displayContabil"></app-job-contabil>
+  </section>
+
+</div>

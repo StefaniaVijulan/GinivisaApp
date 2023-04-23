@@ -1,0 +1,52 @@
+.fruit-thumb {
+  position: relative;
+  h4 {
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    text-shadow: 1px 1px 3px black;
+  }
+  &:hover {
+    h4 {
+      background-color: rgba(0, 59, 28, 0.363);
+      border: 2px solid white;
+      box-shadow: 1px 1px 3px black;
+    }
+  }
+  .image-container {
+    background-color: black;
+    img {
+      max-height: 240px;
+      opacity: 0.8;
+    }
+  }
+
+  .turism-thumb-row {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+  }
+
+}
+
+
+
+
+
+@media only screen and (max-width: 767px) {
+  .thumb-container {
+    flex-direction: column;
+
+    .image-container {
+
+      img {
+        object-fit: cover;
+        height: 90px;
+      }
+    }
+  }
+}

@@ -1,0 +1,57 @@
+<form #userPost="ngForm" (ngSubmit)="onSubmit(userPost.value)">
+  <!-- Name -->
+  <div class="field">
+    <label for="" class="label">Nume</label>
+    <input type="text"
+      name="nameContact"
+      class="input"
+      placeholder="Numele dumneavoastra... *"
+      [(ngModel)]="nameContact"
+      #nameInput="ngModel"
+      required >
+    <div class="help is-error" *ngIf="nameInput.invalid && nameInput.touched">Necompletat *</div>
+    </div>
+
+  <!-- Email -->
+  <div class="field">
+    <label for="" class="label">Email</label>
+    <input type="text"
+      name="emailContact"
+      class="input"
+      placeholder="Adresa de mail... *"
+      [(ngModel)]="emailContact"
+      #emailInput="ngModel"
+      required >
+    <div class="help is-error" *ngIf="emailInput.invalid && emailInput.touched">Necompletat *</div>
+  </div>
+
+    <!-- Email -->
+    <div class="field">
+      <label for="" class="label">Telefon</label>
+      <input type="text"
+        name="phoneContact"
+        class="input"
+        placeholder="Telefon (opțional)..."
+        [(ngModel)]="phoneContact"
+        #emailInput="ngModel">
+      <!-- <div class="help is-error" *ngIf="emailInput.invalid && emailInput.touched">Necompletat *</div> -->
+    </div>
+
+  <!-- Message -->
+  <div class="field">
+    <label for="" class="label">Mesaj</label>
+    <textarea type="text"
+      name="textContact"
+      class="textarea"
+      style="height:170px"
+      placeholder="Mesajul dumneavoastra... *"
+      [(ngModel)]="textContact"
+      #textInput="ngModel"
+      required></textarea>
+    <div class="help is-error" *ngIf="textInput.invalid && textInput.touched">Necompletat *</div>
+  </div>
+
+  <!-- Send Button -->
+  <button type="submit">Trimite</button>
+
+</form>

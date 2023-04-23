@@ -1,0 +1,46 @@
+<!-- Fructe Thumb -->
+<section>
+  <!-- <h4 class="text-center">Despre Frucre</h4> -->
+  <div class="thumb-container"  #target>
+
+    <div class="thumb-link fruit-thumb" (click)="changeFruitToHome(); scroll(target)">
+      <div class="image-container">
+        <img src="assets/images/Fruct-home.jpg" alt="">
+      </div>
+      <h4>Fructe</h4>
+    </div>
+
+    <div class="thumb-link fruit-thumb" (click)="changeFruitToCapsuni(); scroll(target)">
+      <div class="image-container">
+        <img src="assets/images/Fruct-capsuna.jpg" alt="">
+      </div>
+      <h4>Capsuni</h4>
+    </div>
+
+    <div class="thumb-link fruit-thumb"  (click)="changeFruitToZmeura(); scroll(target)">
+      <div class="image-container">
+        <img src="assets/images/Fruct-zmeura.jpg" alt="">
+      </div>
+      <h4>Zmeura</h4>
+    </div>
+
+    <div class="thumb-link fruit-thumb"  (click)="changeFruitToArahide(); scroll(target)">
+      <div class="image-container">
+        <img src="assets/images/Fruct-aluna.jpg" alt="">
+      </div>
+      <h4>Alune</h4>
+    </div>
+  </div>
+  <hr >
+</section>
+
+<!-- space for scrollTo -->
+<div  class="space-for-scrollTo"></div>
+
+<!-- Fructe Descriere -->
+<section>
+  <app-fructe-home *ngIf="home"></app-fructe-home>
+  <app-fructe-capsuni *ngIf="capsuni"></app-fructe-capsuni>
+  <app-fructe-zmeura *ngIf="zmeura"></app-fructe-zmeura>
+  <app-fructe-arahide *ngIf="arahide"></app-fructe-arahide>
+</section>

@@ -1,0 +1,67 @@
+<!-- Header -->
+<section class="header-container">
+  <!-- Background image -->
+  <img class="header-image-background" src="assets/images/Header-Noutati.jpg" alt="">
+  <div class="gradient"></div>
+
+  <!-- Header content -->
+  <div class="container header-content">
+    <div class="header-logo">
+      <img src="assets/images/Logo Ginivisa.png" alt="">
+    </div>
+    <!-- Header Title -->
+    <div class="header-title">
+      <h1 class="green">Pentru sănatate și relaxare</h1>
+    </div>
+  </div>
+</section>
+
+
+<!-- Page Content -->
+<div class="container">
+  <section>
+
+    <div class="news-container"  *ngFor="let news of Noutati; let i=index" >
+      <div class="news-item" >
+        <div class="news-title-row">
+          <h4  class="green">{{news.title}}</h4>
+          <h6>{{news.date}}</h6>
+        </div>
+
+        <div class="iff">
+          <div class="preview" *ngIf="!news.displayNews">
+            <p  >{{news.textPreview}} ...</p>
+          </div>
+          <div class="content"  *ngIf="news.displayNews">
+            <p  [innerHTML]="news.text">  </p>
+
+            <!-- Imagini -->
+            <h5 class="text-center green">Imagini</h5>
+            <div class="img-gallery">
+              <div class="text-center"  *ngFor="let images of news.imgURL; let i=index">
+                <a href="{{images}}" target="_blank"><img src={{images}} alt=""></a>
+              </div>
+            </div>
+
+            <!-- Video -->
+            <!-- <h5 class="text-center green" ></h5> -->
+            <div class="img-gallery">
+              <div class="text-center"  *ngFor="let videos of news.videoURL; let i=index">
+
+                <a class="video-item" href="{{videos}}" target="_blank">
+                  <img class="video" src="assets/images/News/Video Thumb/Festival Sarmale video.jpg" alt="">
+                  <img class="youtube-play" src="assets/images/News/Video Thumb/Youtube Play.png" alt="">
+
+                </a>
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <button (click)="toggleContent(i)"  [innerHTML]="!news.displayNews ? 'Citește' : inchide"></button>
+    </div>
+
+  </section>
+</div>

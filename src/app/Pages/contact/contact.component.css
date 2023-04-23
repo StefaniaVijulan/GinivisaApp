@@ -1,0 +1,77 @@
+.contact-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1rem;
+  padding: 1rem 0;
+}
+
+.contact-container .contact-column {
+  width: 100%;
+  min-height: 400px;
+  border-radius: 10px;
+}
+
+/* Google Maps */
+#googleMap {
+  width: 100%;
+  min-height: 400px;
+  border-radius: 10px;
+}
+
+.contact-simplu {
+  padding: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  min-height: 400px;
+  border-radius: 10px;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.438);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.438);
+}
+
+.contact-simplu .contact-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contact-simplu .contact-group li {
+  font-weight: 500;
+}
+
+.contact-simplu .row {
+  padding: 0.5rem;
+}
+
+.contact-simplu .row span {
+  padding-left: 0.5rem;
+  font-weight: 600;
+}
+
+@media screen and (max-width: 992px) {
+  .contact-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+/*# sourceMappingURL=contact.component.css.map */

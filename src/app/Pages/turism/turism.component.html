@@ -1,0 +1,156 @@
+<!-- Header -->
+<section class="header-container">
+  <!-- Background image -->
+  <img class="header-image-background" src="assets/images/Header-Turism.jpg" alt="">
+  <div class="gradient"></div>
+
+  <!-- Header content -->
+  <div class="container header-content">
+    <div class="header-logo">
+      <img src="assets/images/Logo Ginivisa.png" alt="">
+    </div>
+    <!-- Header Title -->
+    <div class="header-title">
+      <h1 class="blue">Ginivișa Gorjului</h1>
+      <h2 class="green">Aducem Valea Bistriței mai aproape de tine!</h2>
+    </div>
+  </div>
+</section>
+
+
+<!-- Page Content -->
+
+<!-- SuperOferta -->
+<div class="container">
+
+  <section>
+    <p>Anul a început în forță la Ginivișa! De aceea, vrem să te invităm să ne fii oaspete, în curând. Avem pentru tine
+      o superofertă limitată! Pentru doar <strong>150 lei/persoană</strong> în weekend și <strong>120
+        ron/persoană</strong> în timpul săptămânii, profiți de o noapte de <strong>cazare</strong> într-o pensiune
+      rustică și confortabilă + <strong>cină</strong> + <strong>mic dejun</strong>.</p>
+    <div class="text-center">
+      <button routerLink="/super-oferta" class="m-auto">Superofertă!</button>
+    </div>
+  </section>
+
+  <!-- Region Description -->
+  <!-- <section>
+    <h4 class="green">De ce să vizitezi Valea Bistriței de Gorj?</h4>
+    <p>
+      Scriitoarea Delia Mitroi nota într-un articol că Valea Bistriței de Gorj este <a href="https://www.valeabistritei.org/valea-bistritei-gorjene/" target="blank">„paradisul montan dintre ape”</a>. Frumusețea naturii sălbatice îți vrăjește privirea, iar aerul curat și tare de la poalele Masivului Vâlcan este un adevărat antidot pentru plămânii tăi. Poate că până acum nici n-ai avut idee câte minunății poți vizita atât de aproape de casă. Poate nici nu te-ai gândit că într-o scurtă excursie la Peștișani ți-ai putea redescoperi identitatea, spiritualitatea sau adevărata fericire. Ei bine, aici ai toate șansele să o faci. Înconjurat de râul Bistrița, de păduri verzi și la un pas de magia monumentelor naturii create de Defileul Jiului, te poți lăsa pradă visării, în timp ce îți pierzi urmele pașilor într-o altfel de Românie. În România strămoșilor, în România datinilor și a tradițiilor neaoșe, în inima primei provincii latine - Oltenia.
+    </p>
+  </section>
+
+  <section>
+    <h4 class="green">Atractii Turistice</h4>
+    <p>Valea Bistriței de Gorj este petecul de pământ în care natura a modelat o lume sălbatică, înțesată de munți, ape și păduri de o frumusețe spectaculară. Pe aceste meleaguri rustice, fabuloase, omul a dat o mână de ajutor naturii, amenajând drumuri, stațiuni montane, localități și muzee ce au devenit principalele atracții turistice din zona Gorjului. Despre o parte dintre ele, cele situate chiar în apropierea fermei Ginivișa, vom vorbi în continuare. Unele muzee și case memoriale amintite mai jos sunt cu atât mai speciale, cu cât sunt legate de locul nașterii și de viețile unor personalități de seamă din regiunea Olteniei.</p>
+  </section>--->
+
+  <!-- 
+    Atractii
+  <section #target  class="atractii-container">
+    <button class="close-btn" *ngIf="displayAtractii" (click)="closeAtractii()"><span class="material-icons">close</span></button>
+    <app-turism-atractii *ngIf="displayAtractii"></app-turism-atractii>
+  </section>
+
+
+  <section>
+    <div class="buttons-container">
+      <button *ngIf="!displayAtractii" class="btn-galerie" (click)="showAtractii(); scroll(target)">Atractii <span class="material-icons">expand_more</span></button>
+    </div>
+  </section>
+  <br> -->
+
+  <!-- Cazare -->
+  <hr>
+
+  <h4 class="green">Unde te-ai putea caza pe Valea Bistriței Gorjene?</h4>
+  <p>
+    Dacă alegi să-ți petreci weekendul sau vacanța la Peștișani, pe Valea Bistriței, noi îți oferim cele mai avantajoase
+    locuri de cazare, privind raportul calitate-preț! Nu trebuie decât să ne vizitezi pensiunile (online sau fizic) și
+    să-ți rezervi locul din timp, iar noi îți asigurăm un sejur de poveste! Găzduit în pensiunile noastre, vei fi foarte
+    aproape de principalele <a href="/atractii" style="color: green">atracții turistice </a> ale județului Gorj
+    (Mănăstirea Tismana, municipiul Târgu Jiu, Casa Memorială „Constantin Brâncuși”, Cheile Sohodolului, Muzeul Satului,
+    ș.a.). Noi îți oferim cele mai bune condiții de cazare! Ție nu-ți rămâne decât să descoperi comorile Gorjului și să
+    te încarci cu energie pură!
+  </p>
+  <div class="card-item">
+    <div class="card mb-4 shadow-5m" *ngFor="let x of rooms">
+      <img src="{{x.img}}" />
+
+      <div class="card-body">
+        <p class="card-title">
+          <b>{{x.name}}</b>
+        </p>
+        <p class="card-text">
+        </p>
+      </div>
+      <div>
+        <div style="text-align: center;">
+          <mat-icon style="vertical-align: middle; font-size: 25px; height: 25px; width: 35px;">people</mat-icon>
+          <span style="font-size: 20px; vertical-align: middle;padding: 12px;">{{x.noPers}}</span>
+          <svg *ngIf="x.noBathrooms!=0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" style="height: 7%;width: 7%; vertical-align: middle; ">
+            <!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+            <path
+              d="M64 131.9C64 112.1 80.1 96 99.9 96c9.5 0 18.6 3.8 25.4 10.5l16.2 16.2c-21 38.9-17.4 87.5 10.9 123L151 247c-9.4 9.4-9.4 24.6 0 33.9s24.6 9.4 33.9 0L345 121c9.4-9.4 9.4-24.6 0-33.9s-24.6-9.4-33.9 0l-1.3 1.3c-35.5-28.3-84.2-31.9-123-10.9L170.5 61.3C151.8 42.5 126.4 32 99.9 32C44.7 32 0 76.7 0 131.9V448c0 17.7 14.3 32 32 32s32-14.3 32-32V131.9zM256 352a32 32 0 1 0 0-64 32 32 0 1 0 0 64zm64 64a32 32 0 1 0 -64 0 32 32 0 1 0 64 0zm0-128a32 32 0 1 0 0-64 32 32 0 1 0 0 64zm64 64a32 32 0 1 0 -64 0 32 32 0 1 0 64 0zm0-128a32 32 0 1 0 0-64 32 32 0 1 0 0 64zm64 64a32 32 0 1 0 -64 0 32 32 0 1 0 64 0zm32-32a32 32 0 1 0 0-64 32 32 0 1 0 0 64z" />
+            </svg>
+          <span *ngIf="x.noBathrooms!=0" style="font-size: 20px; vertical-align: middle;padding: 12px;">{{x.noBathrooms}}</span>
+        </div>
+        <p style="text-align: center;">Pret: {{x.price}} RON </p>
+      </div>
+      <div class="button-cls" style="text-align: center;">
+        <!-- Button trigger modal -->
+        <button type="button" class="btn btn-warning" (click)="onSelect(x)" data-toggle="modal"
+          style="text-align: center;" data-target="#exampleModal">
+          Detailii
+        </button>
+
+      </div>
+
+      <br>
+    </div>
+  </div>
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <app-room-details [room]="selectedRoom"></app-room-details>
+    </div>
+  <!-- 
+<div class="mini-descrieri-container">
+
+  <div class="item-descriere">
+    <h6 class="green text-center">Hanul Vânătorului</h6>
+    <p>Peisaje de basm la poalele munților, mâncare ca la mama acasă într-un restaurant tradițional, stil rustic autentic și decoruri cu gust într-o pensiune cochetă de pe malul Bistriței Gorjene. Vino la Hanul Vânătorului și te vei bucura de o vacanță altfel!</p>
+  </div>
+  <div class="item-descriere">
+    <h6 class="green text-center">Casa Ana</h6>
+    <p>Confort, căldura unei pensiuni intime și romantice, relaxare din plin într-un ciubăr cu jacuzzi de 8 locuri, sport și activități alerte care îți vor alunga plictiseala, într-o sală de jocuri special amenajată. Pe toate le găsești la Casa Ana, căsuța vacanței tale de vis! </p>
+  </div>
+
+</div> -->
+
+  <!-- 
+<h4 class="green">Cum poți plăti?</h4>
+<p>
+  Când te cazezi la Hanul Vânătorului sau Casa Ana, nu trebuie să-ți faci griji pentru modalitățile de plată. Ai o gamă variată de posibilități la dispoziția ta. Poți plăti cu <strong>cardul</strong>, în <strong>numerar</strong>, sau cu <strong>vouchere de vacanță</strong> Edenred, UpRomania ori Sodexo. Tu doar fă-ți rezervare! De restul de ocupăm noi!
+</p> -->
+
+
+  <!-- <div class="img-container">
+  <img src="assets/images/Turism/Han-Ana-harta.jpg" alt="">
+</div>
+
+<br>
+  <app-turism-cazare></app-turism-cazare> -->
+  <!-- <hr> -->
+  <!-- </div>
+<br> -->
+
+  <!-- Pachet Turistic -->
+  <!-- <section>
+  <div class="container">
+    <hr>
+
+    <app-pachet-turistic></app-pachet-turistic>
+  </div>
+</section>
+<br> -->

@@ -1,0 +1,74 @@
+.header-logo-BrainHub img {
+  width: 100%;
+  max-width: 250px;
+  min-width: 110px;
+}
+.contact-row {
+    display: flex;
+    align-items: center;
+    padding: 0.5rem;
+    span {
+        padding-left: 1rem;
+    }
+}
+.gallery-btn {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.gallery-container {
+    margin-top: 1rem;
+}
+
+
+// Contact
+
+.contact-container {
+  display: flex;
+  gap: 1rem;
+  padding: 1rem 0;
+  .contact-column {
+    width: 100%;
+    min-height: 400px;
+    border-radius: 10px;
+  }
+}
+
+/* Google Maps */
+#googleMap {
+  width: 100%;
+  min-height: 400px;
+  border-radius: 10px;
+  border: 1px solid red;
+}
+
+// Contact-Simplu - Provizoriu
+.contact-simplu {
+  display: flex;
+  flex-direction: column;
+  // justify-content: center;
+
+  width: 100%;
+  min-height: 200px !important;
+
+
+  .row {
+
+    span {
+      padding-left: 0.5rem;
+      font-weight: 600;
+    }
+  }
+
+}
+.contact-logo img {
+  max-width: 100px;
+  min-width: 80px;
+}
+
+
+@media screen and (max-width: 992px) {
+  .contact-container {
+    flex-direction: column;
+  }
+}

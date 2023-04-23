@@ -1,0 +1,56 @@
+<!-- Header -->
+<section class="header-container">
+  <!-- Background image -->
+  <img class="header-image-background" src="assets/images/Header-Echipa.jpg" alt="">
+  <div class="gradient"></div>
+
+  <!-- Header content -->
+  <div class="container header-content">
+    <div class="header-logo">
+      <img src="assets/images/Logo Ginivisa.png" alt="">
+    </div>
+    <!-- Header Title -->
+    <div class="header-title">
+      <h1 class="blue">Pentru sănătate și relaxare</h1>
+    </div>
+  </div>
+</section>
+
+<!-- Page Content -->
+<div class="container">
+  <h1 class="text-center green">Echipa</h1>
+
+    <div class="echipa-gallery">
+      <div class="echipa-item"  *ngFor="let echipa of Echipa"  id={{echipa.id}}>
+        <div class="image-comtainer">
+          <img src={{echipa.imgURL}} alt=""  id={{echipa.id}}>
+        </div>
+        <h4 class=" green">{{echipa.nume}}</h4>
+        <h5  class=" green">{{echipa.functie}}</h5>
+        <button  (click)="showModal($event)"  id={{echipa.id}}>Detalii</button>
+      </div>
+    </div>
+
+  <!-- Modal -->
+  <div class="modal-container">
+    <div class="modal"  *ngFor="let echipa of Echipa"  id={{echipa.id}}>
+      <div class="echipa-item-modal container"  >
+        <div class="image-comtainer"  id={{echipa.id}}>
+          <img src={{echipa.imgURL}} alt=""  id={{echipa.id}}>
+        </div>
+        <h4 class="text-center green">{{echipa.nume}}</h4>
+        <h5 id={{echipa.id}} class="text-center green">{{echipa.functie}}</h5>
+        <p id={{echipa.id}} class="despre"  [innerHTML]="echipa.despre"></p>
+        <!-- Close Button -->
+        <button id={{echipa.id}} class="close-modal" (click)="closeModal($event)">
+          <span id={{echipa.id}} class="material-icons" >close</span>
+        </button>
+    </div>
+  </div>
+
+</div>
+
+
+
+
+

@@ -1,0 +1,54 @@
+<header>
+
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top my-navbar">
+    <div class="container nav-container">
+      <!-- Logo -->
+      <a class="navbar-brand" routerLink="/" id="logo"   *ngIf="displayLogo">
+        <img src="assets/images/Logo Ginivisa.png" alt=""   >
+      </a>
+      <a class="navbar-brand" routerLink="/" id="logo-text">Ginivișa</a>
+
+      <!-- Hamburger Menu -->
+      <button
+      class="navbar-toggler"
+      type="button"
+      data-toggle="collapse"
+      data-target="#navbarNav"
+      aria-controls="navbarNav"
+      aria-expanded="false"
+      aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- NavBar - Links -->
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show">
+            <a class="nav-link " routerLink="/" routerLinkActive="active"  [routerLinkActiveOptions]="{exact: true}">Acasă</a>
+          </li>
+          <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show">
+            <a class="nav-link" routerLink="/magazin-fructe" routerLinkActive="active">Comandă fructe</a>
+          </li>
+          <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show">
+            <a class="nav-link" routerLink="/turism" routerLinkActive="active">Rezervă cazare</a>
+          </li>
+          <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show">
+            <a class="nav-link" routerLink="/restaurant" routerLinkActive="active">Restaurant</a>
+          </li>
+          <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show">
+            <a class="nav-link" routerLink="/activitati" routerLinkActive="active">Activitati</a>
+          </li>
+          <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show">
+            <a class="nav-link" href="assets/divizare/230213_Proiect divizare_confidentializat.pdf" target="_blank" routerLinkActive="active">Proiect Divizare</a>
+          </li>
+          <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show">
+            <a class="nav-link" routerLink="/contact" routerLinkActive="active">Contact</a>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+  </nav>
+
+  </header>
+

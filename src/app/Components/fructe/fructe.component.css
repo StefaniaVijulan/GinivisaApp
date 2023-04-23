@@ -1,0 +1,55 @@
+.fruit-thumb {
+  position: relative;
+}
+
+.fruit-thumb h4 {
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  text-shadow: 1px 1px 3px black;
+}
+
+.fruit-thumb:hover h4 {
+  background-color: rgba(0, 59, 28, 0.363);
+  border: 2px solid white;
+  -webkit-box-shadow: 1px 1px 3px black;
+          box-shadow: 1px 1px 3px black;
+}
+
+.fruit-thumb .image-container {
+  background-color: black;
+}
+
+.fruit-thumb .image-container img {
+  max-height: 240px;
+  opacity: 0.8;
+}
+
+.fruit-thumb .turism-thumb-row {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+@media only screen and (max-width: 767px) {
+  .thumb-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .thumb-container .image-container img {
+    -o-object-fit: cover;
+       object-fit: cover;
+    height: 90px;
+  }
+}
+/*# sourceMappingURL=fructe.component.css.map */

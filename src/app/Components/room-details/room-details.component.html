@@ -7,10 +7,99 @@
         </button>
       </div>
       <div class="modal-body">
-        <img width="270" style="margin-left: 20%" mat-image id="img" alt="" src="{{'/assets/imgs/' + room.img}}" >
-        <p>
-            {{room.price}}
-        </p>
+        <swiper
+        [loop]="true"
+        [spaceBetween]="10"
+        [navigation]="true"
+        [thumbs]="{ swiper: thumbsSwiper }"
+        class="mySwiper2" >
+  
+      <ng-template swiperSlide *ngIf="room.img1">
+          <img src="{{room.img1}}" />
+      </ng-template>
+      <ng-template swiperSlide *ngIf="room.img2">
+          <img src="{{room.img2}}" />
+      </ng-template>
+      <ng-template swiperSlide *ngIf="room.img3">
+          <img src="{{room.img3}}" />
+      </ng-template>
+      <ng-template swiperSlide *ngIf="room.img4">
+          <img src="{{room.img4}}" />
+      </ng-template>
+      <ng-template swiperSlide *ngIf="room.img5">
+          <img src="{{room.img5}}" />
+      </ng-template>
+      <ng-template swiperSlide *ngIf="room.img6">
+          <img src="{{room.img6}}" />
+      </ng-template>
+      <ng-template swiperSlide *ngIf="room.img7">
+          <img src="{{room.img7}}" />
+      </ng-template>
+      <ng-template swiperSlide *ngIf="room.img8">
+          <img src="{{room.img8}}" />
+      </ng-template>
+      <ng-template swiperSlide *ngIf="room.img9">
+          <img src="{{room.img9}}" />
+      </ng-template>
+      <ng-template swiperSlide *ngIf="room.img10">
+          <img src="{{room.img10}}" />
+      </ng-template>
+      <ng-template swiperSlide *ngIf="room.img11">
+          <img src="{{room.img11}}" />
+      </ng-template>
+      <ng-template swiperSlide *ngIf="room.img12">
+          <img src="{{room.img12}}" />
+      </ng-template>
+  
+      </swiper>
+      <swiper
+        (swiper)="thumbsSwiper = $event"
+        [loop]="true"
+        [spaceBetween]="10"
+        [slidesPerView]="4"
+        [freeMode]="true"
+        [watchSlidesProgress]="true"
+        class="mySwiper" >
+  
+        <ng-template swiperSlide *ngIf="room.img1">
+          <img src="{{room.img1}}" />
+      </ng-template>
+      <ng-template swiperSlide *ngIf="room.img2">
+          <img src="{{room.img2}}" />
+      </ng-template>
+      <ng-template swiperSlide *ngIf="room.img3">
+          <img src="{{room.img3}}" />
+      </ng-template>
+      <ng-template swiperSlide *ngIf="room.img4">
+          <img src="{{room.img4}}" />
+      </ng-template>
+      <ng-template swiperSlide *ngIf="room.img5">
+          <img src="{{room.img5}}" />
+      </ng-template>
+      <ng-template swiperSlide *ngIf="room.img6">
+          <img src="{{room.img6}}" />
+      </ng-template>
+      <ng-template swiperSlide *ngIf="room.img7">
+          <img src="{{room.img7}}" />
+      </ng-template>
+      <ng-template swiperSlide *ngIf="room.img8">
+          <img src="{{room.img8}}" />
+      </ng-template>
+      <ng-template swiperSlide *ngIf="room.img9">
+          <img src="{{room.img9}}" />
+      </ng-template>
+      <ng-template swiperSlide *ngIf="room.img10">
+          <img src="{{room.img10}}" />
+      </ng-template>
+      <ng-template swiperSlide *ngIf="room.img11">
+          <img src="{{room.img11}}" />
+      </ng-template>
+      <ng-template swiperSlide *ngIf="room.img12">
+          <img src="{{room.img12}}" />
+      </ng-template>
+  
+      </swiper>
+  
       </div>
       <div class="modal-footer text-center">
         <button type="button" class="btn btn-secondary" style="text-align: center;" data-dismiss="modal">Close</button>
